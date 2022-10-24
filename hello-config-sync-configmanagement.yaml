@@ -2,8 +2,9 @@ apiVersion: configmanagement.gke.io/v1
 kind: ConfigManagement
 metadata:
   name: config-management
+  #namespace: config-management-system
 spec:
-  clusterName: hello-config-sync
+  clusterName: minikube
   git:
     syncRepo: https://github.com/wfblockchain/poc-config-sync
     secretType: none
